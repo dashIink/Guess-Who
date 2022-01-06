@@ -1,0 +1,36 @@
+body {
+    background-color: #F2E9E4
+}
+
+.display-6 {
+    text-align: "center";
+}
+.display-6-center {
+    text-align: center;
+    margin-top: 15%;
+}
+.container-top{
+    background-color: #22223B;
+}
+.display-4-header {
+    color: #9A8C98;
+}
+
+#slotnumber { 
+    font-size: 140px;
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+.btn {
+    padding-top: 5%;
+    font-size: 50px;
+}
+
+.btn-light{
+    padding-top: 0%;
+    font-size: 30px;
+    background-color: #9A8C98;
+}
+

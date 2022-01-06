@@ -1,0 +1,55 @@
+<html>
+    <header>
+        
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel = "stylesheet" type="text/css" href ="..\styles\main.css">
+    </header>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-top">
+              <center><h1 class="display-4-header">Guess who?</h1></center>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+        <div class = "container">
+          <h1 class = "display-6-center">How many images?</h1>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col">
+                    <p id = "slotnumber">0</p>
+                </div>
+                <div class = "col">
+                    <button class = "btn" onclick="increase()">&#x0245</button><br>
+                    <button class = "btn" onclick="decrease()">&#x56</button>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col">
+                    <br>
+                    <center><button class = "btn btn-light">Start Playing</button></center>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slots = 0;
+
+            function increase(){
+                slots++;
+                document.getElementById("slotnumber").innerHTML = slots;
+            }
+
+            function decrease(){
+                if (slots < 1){
+                    document.getElementById("slotnumber").innerHTML = 0;
+                }
+                else {
+                    slots--;
+                    document.getElementById("slotnumber").innerHTML = slots;
+                }
+                
+            }
+        </script>
+    </body>
+</html>
