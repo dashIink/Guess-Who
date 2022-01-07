@@ -1,0 +1,22 @@
+{
+  "name": "guess-who",
+  "version": "1.0.0",
+  "description": "guess who web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashIink/Guess-Who.git"
+  },
+  "author": "kevin liam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashIink/Guess-Who/issues"
+  },
+  "homepage": "https://github.com/dashIink/Guess-Who#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
