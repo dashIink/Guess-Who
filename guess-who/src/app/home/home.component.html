@@ -1,0 +1,13 @@
+<div class = "container">
+  <h1 class = "display-6-center">How many images?</h1>
+</div>
+<div class = "grid">
+    <div class="row">
+      <p id = "slotnumber">{{numImages}}</p>
+      <div class = "select">
+          <button class = "btn" (click)="increaseNum()">&#x0245;</button><br>
+          <button class = "btn" (click)="decreaseNum()">&#x56;</button>
+      </div>
+    </div>
+    <button class = "btn btn-light" type = "submit">Start Playing</button>
+</div>

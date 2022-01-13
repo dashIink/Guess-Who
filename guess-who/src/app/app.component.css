@@ -1,0 +1,13 @@
+.container-top{
+  background-color: #4040af;
+  padding: 80px;
+  position: relative;
+}
+.text{
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -100%);
+}
