@@ -1,0 +1,12 @@
+<div class="images">
+  <label class="grid" *ngFor="let i of numArray">
+    <div class="image">
+      <img [src]="url[i]" *ngIf="url[i]" alt="Image of a thing">
+    </div>
+    <span *ngIf="!url[i]">Select Image</span>
+    <input #imageInput type="file" accept="image/*" (change)="selectFile($event, i)">
+  </label>
+</div>
+<div>
+  <button>Begin!</button>
+</div>

@@ -9,5 +9,5 @@
           <button class = "btn" (click)="decreaseNum()">&#x56;</button>
       </div>
     </div>
-    <button class = "btn btn-light" type = "submit">Start Playing</button>
+    <button class = "btn btn-light" type = "submit" [routerLink]="['upload']" [queryParams]="{images: numImages}">Start Playing</button>
 </div>
