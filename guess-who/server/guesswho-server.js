@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 4200
+const port = 3000
 
-app.get('/test', (req, res) => {
+app.get('/api/test', (req, res) => {
   res.send('Hello World!')
 })
 
