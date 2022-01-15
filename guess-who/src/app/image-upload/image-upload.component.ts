@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TestServiceService } from '../service/test-service.service';
 
 @Component({
   selector: 'image-upload',
@@ -14,7 +15,7 @@ export class ImageUploadComponent implements OnInit {
   numImages: number = 0;
   numArray = new Array();
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private service: TestServiceService) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -46,6 +47,12 @@ export class ImageUploadComponent implements OnInit {
       this.url[index] = reader.result;
       console.log(this.url);
     }
+  }
+
+  test() {
+    this.service.getTest().subscribe((result) => {
+      console.log(result);
+    });
   }
 
 }
